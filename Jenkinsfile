@@ -24,7 +24,7 @@ pipeline {
                  // Uncomment and use the below if you need to install dependencies 
                  dir('lendy') {
                     sh '''
-                          pip install -r requirements.txt
+                         python3 -m pip install -r requirements.txt
                       '''
                  }
              }
