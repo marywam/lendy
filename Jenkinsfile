@@ -22,11 +22,11 @@ pipeline {
              steps {
                  echo "Installing dependencies in the Jenkins container... python version matters"
                  // Uncomment and use the below if you need to install dependencies 
-                 dir('lendy') {
-                    sh '''
-                         python3 -m pip install -r requirements.txt
-                      '''
-                 }
+                 //dir('lendy') {
+                    //sh '''
+                        // pip install -r requirements.txt
+                     // '''
+                // }
              }
          }
 
