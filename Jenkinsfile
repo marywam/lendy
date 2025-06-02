@@ -55,8 +55,8 @@ pipeline {
                          )]) {
                              sh """
                                  echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                                 docker tag $IMAGE_NAME $DOCKER_REPO:latest
-                                 docker push $DOCKER_REPO:latest
+                                 docker tag $IMAGE_NAME $DOCKER_HUB_REPO:latest
+                                 docker push $DOCKER_HUB_REPO:latest
                              """
                          }
                      }
