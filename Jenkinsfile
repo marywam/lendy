@@ -49,7 +49,7 @@ pipeline {
                          def dockerImageTag = "${DOCKER_HUB_REPO}:latest"
                          // Using credentials for Docker Hub login securely
                          withCredentials([usernamePassword(
-                             credentialsId: 'dockerhub-creds', 
+                             credentialsId: 'DOCKER_HUB_REPO', 
                              usernameVariable: 'DOCKER_USER',  
                              passwordVariable: 'DOCKER_PASS' 
                          )]) {
